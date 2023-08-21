@@ -13,7 +13,6 @@ public class Guest {
     }
 
 
-
     public String getName() {
         return name;
     }

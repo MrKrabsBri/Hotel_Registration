@@ -1,27 +1,41 @@
 package org.Brikas.Hotel;
 
-import java.util.Scanner;
+import java.util.LinkedList;
 
 public class Room {
-    private int number;// cia gal i String reiktu paversti
-    public boolean isOccupied = false ;
+    private int number;
+    public boolean roomStatus = false ; // po default kambarys neuzimtas
 
-    public Room(int number, boolean isRoomEmpty) {
+    public Guest roomBookedBy ; // ar tikrai reikia??
+
+    public LinkedList<Guest>allGuestsWhoVisited ;// list of guests that visited this room
+
+    public Room(){}
+
+    public Room(int number, boolean roomStatus, LinkedList<Guest>allGuestsWhoVisited) {// add 3 verte to constructor?
         this.number = number;
-        this.isOccupied = isRoomEmpty;
+        this.roomStatus = roomStatus;
+        this.allGuestsWhoVisited = allGuestsWhoVisited;
     }
 
-    public int getNumber(){
+    public int getRoomNumber(){
         return number;
     }
-
     public boolean getRoomStatus(){
-        return isOccupied;
+        return roomStatus;
+    }
+    public void setRoomStatus(boolean isEmpty){
+        roomStatus = isEmpty;
     }
 
-    public void setRoomStatus(boolean isEmpty){
-        this.isOccupied = isEmpty;
-    }
+    public void setRoomGuest(Guest guest){
+        if (roomStatus == false){
+        roomBookedBy = guest;}
+        else System.out.println("this room is booked, cannot book this room");
+        }
+
+
+
 
 //    public void registerGuest(Guest guest){
 //        Scanner scanner = new Scanner(System.in);
