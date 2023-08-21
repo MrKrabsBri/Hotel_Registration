@@ -35,11 +35,16 @@ public class Main {
 
         Guest hotelGuest = new Guest();
 
-        clientManager.registerGuest(hotelGuest,rooms.get(0));
+        clientManager.registerGuest(/*hotelGuest,*/rooms.get(0));
+        clientManager.registerGuest(/*hotelGuest,*/rooms.get(2));
 
        // rooms.get(0).registerGuest(hotelGuest);
 
         System.out.println(rooms.get(0).isOccupied);
+        System.out.println(rooms.get(1).isOccupied);
+        System.out.println(rooms.get(2).isOccupied);
+        System.out.println(rooms.get(3).isOccupied);
+        System.out.println(rooms.get(4).isOccupied);
 
 
     }
