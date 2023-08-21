@@ -54,17 +54,36 @@ public class Main {
 
             int selection = scanner.nextInt();
             scanner.nextLine();
+            Guest hotelGuest = new Guest();
 
             switch(selection){
                 case 1:
                     for (Room room: rooms){
-                       if(room.getRoomStatus()==false){// jei room nera booked
-                           clientManager.registerGuest(room);
-                           break;
+                       if(room.getRoomStatus()==false){// if room is free to be booked
+                           hotelGuest = clientManager.registerGuest(room);// Guest is assigned to the room
+
+                           System.out.println("Check-in successful!");
+                           RegistrationHistory.addToGuestRegistry(listOfAllGuestsOfRoom,hotelGuest);
+                           //break;
                             //roomToBook = room;
                        }
-
+                       break;
                     }
+                case 2:
+                    System.out.println("checked-out");
+                    break;
+                case 3:
+                    System.out.println("displaying booked rooms");
+                    break;
+                case 4:
+                    System.out.println("displaying booked room history");
+                    break;
+                case 5:
+                    System.out.println("Exiting program");
+                    exit = true;
+                    break;
+                default:
+
 
             }
 

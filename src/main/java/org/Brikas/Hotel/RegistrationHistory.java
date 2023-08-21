@@ -12,7 +12,7 @@ public class RegistrationHistory {
         this.listOfAllGuests = listOfAllGuests;
     }
 
-    public void addToGuestRegistry(LinkedList<Guest>listOfAllGuests,Guest guest){//LinkedList<Guest>guests
+    public static void addToGuestRegistry(LinkedList<Guest>listOfAllGuests,Guest guest){//LinkedList<Guest>guests
         listOfAllGuests.add(guest);
     }
 

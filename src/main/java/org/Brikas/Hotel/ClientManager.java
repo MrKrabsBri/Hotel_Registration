@@ -26,7 +26,7 @@ public class ClientManager {
     LinkedList<Room>rooms = new LinkedList<>();//booked rooms
 
 
-    public void registerGuest(Room room){
+    public Guest registerGuest(Room room){
         System.out.println("Enter the name of a guest you want to register: ");
         String name = scanner.nextLine();//guest.getName();
         System.out.println("Enter the surname of a guest you want to register: ");
@@ -44,6 +44,7 @@ public class ClientManager {
         roomManager.addARoomToTheList(rooms,room);
        // roomManager.displayRoomList(rooms);
            //  ^^^cia tik optional, reikes on call iskviesti
+        return guest;
     }
 
 
