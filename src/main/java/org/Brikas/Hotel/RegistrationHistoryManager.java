@@ -2,14 +2,14 @@ package org.Brikas.Hotel;
 
 import java.util.LinkedList;
 
-public class RegistrationHistory {
+public class RegistrationHistoryManager {
 
     LinkedList<Guest> listOfAllGuests ;//= new LinkedList<>();
 
     Room room ;
     //Guest guest = new Guest();
 
-    public RegistrationHistory(Room room,LinkedList<Guest> listOfAllGuests) {// constructor
+    public RegistrationHistoryManager(Room room, LinkedList<Guest> listOfAllGuests) {// constructor
         this.listOfAllGuests = listOfAllGuests;
     }
 

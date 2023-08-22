@@ -4,36 +4,56 @@ import java.util.LinkedList;
 
 public class Room {
     private int number;
-    public boolean roomStatus = false ; // po default kambarys neuzimtas
+    public boolean isRoomBooked = false ; // po default kambarys neuzimtas
 
-    public Guest roomBookedBy ; // ar tikrai reikia??
 
-    public LinkedList<Guest>allGuestsWhoVisited ;// list of guests that visited this room
-
-    public Room(){}
-
+    public Room(){}                            // gal sito 3 value "LinkedList<Guest>allGuestsWhoVisited" net nereikia.
     public Room(int number, boolean roomStatus, LinkedList<Guest>allGuestsWhoVisited) {// add 3 verte to constructor?
         this.number = number;
-        this.roomStatus = roomStatus;
+        this.isRoomBooked = roomStatus;
         this.allGuestsWhoVisited = allGuestsWhoVisited;
     }
 
+    public boolean isRoomBooked() {
+        return isRoomBooked;
+    }
+
+    public void setRoomBooked(boolean isRoomBooked) {
+        this.isRoomBooked = isRoomBooked;
+    }
     public int getRoomNumber(){
         return number;
     }
-    public boolean getRoomStatus(){
-        return roomStatus;
-    }
-    public void setRoomStatus(boolean isEmpty){
-        roomStatus = isEmpty;
+    public boolean getRoomBooked(){
+        return isRoomBooked;
     }
 
-    public void setRoomGuest(Guest guest){
-        if (roomStatus == false){
-        roomBookedBy = guest;}
-        else System.out.println("this room is booked, cannot book this room");
-        }
 
+
+    public Guest roomBookedBy ;
+
+
+
+    public LinkedList<Guest>allGuestsWhoVisited ;// list of guests that visited this room
+
+
+
+    public void setRoomGuest(Guest roomBookedBy) { // auto setter
+        this.roomBookedBy = roomBookedBy;
+    }
+    public Guest getRoomGuest() {
+        return roomBookedBy;
+    }
+
+
+
+
+//    public void setRoomGuest(Guest guest){
+//        //if (roomStatus == false){
+//        // ^^^ if statements will not be here, but in room manager
+//        roomBookedBy = guest;
+//       // else System.out.println("this room is booked, cannot book this room");
+//        }
 
 
 
