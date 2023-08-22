@@ -6,14 +6,12 @@ public class Room {
     private int number;
     public boolean isRoomBooked = false ; // po default kambarys neuzimtas
 
+    public Room(){}
 
-    public Room(){}                            // gal sito 3 value "LinkedList<Guest>allGuestsWhoVisited" net nereikia.
-    public Room(int number, boolean roomStatus, LinkedList<Guest>allGuestsWhoVisited) {// add 3 verte to constructor?
+    public Room(int number, boolean roomStatus) {
         this.number = number;
         this.isRoomBooked = roomStatus;
-        this.allGuestsWhoVisited = allGuestsWhoVisited;
     }
-
     public boolean isRoomBooked() {
         return isRoomBooked;
     }
@@ -28,6 +26,12 @@ public class Room {
         return isRoomBooked;
     }
 
+    public void setRoomGuest(Guest roomBookedBy) { // auto setter
+        this.roomBookedBy = roomBookedBy;
+    }
+    public Guest getRoomGuest() {
+        return roomBookedBy;
+    }
 
 
     public Guest roomBookedBy ;
@@ -38,14 +42,11 @@ public class Room {
 
 
 
-    public void setRoomGuest(Guest roomBookedBy) { // auto setter
-        this.roomBookedBy = roomBookedBy;
-    }
-    public Guest getRoomGuest() {
-        return roomBookedBy;
-    }
 
-
+    @Override
+    public String toString(){
+        return "Room " + number;
+    }
 
 
 //    public void setRoomGuest(Guest guest){
@@ -76,10 +77,7 @@ public class Room {
 //            }
 //        }
 
-    @Override
-    public String toString(){
-       return "Room " + number;
-    }
+
 //    public void occupyRoom(Object a){ // cia klaidos bus
 //        isRoomEmpty = false;
 //    }

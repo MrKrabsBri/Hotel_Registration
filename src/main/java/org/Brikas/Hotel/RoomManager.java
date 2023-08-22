@@ -14,7 +14,7 @@ public class RoomManager {
     static int fullRooms ;
 
     // ar tikrai static, kadangi sukuriamas bookedRooms?
-    public static LinkedList<Room> listOfBookedRooms(LinkedList<Room>rooms/*, Room room*/){ // think about array list
+    public static LinkedList<Room> listOfBookedRooms(LinkedList<Room>rooms){ // think about array list
         //sitas metodas neprintins, o bus naudojamas maine, su displayInfo();
         bookedRooms.clear();
         for (Room hotelRoom: rooms) {
@@ -54,6 +54,31 @@ public class RoomManager {
         }
     }
 
+    public Room findRoomWithName(LinkedList<Room>bookedRooms, Guest nameToFind){
+
+        for (Room room: bookedRooms) {
+            if(room.getRoomGuest()!= null && room.getRoomGuest().getName().equals(nameToFind)){
+                System.out.println("found a matching room " + room.getRoomNumber() + " name " + room.getRoomGuest().getName() +
+                 " surname " + room.getRoomGuest().getSurname());
+                return room;
+            }
+        }
+        return null;
+
+    }
+// po commito istrink jei grisi
+    public int findRoomNumberWithName(LinkedList<Room>bookedRooms, Guest nameToFind){
+
+        for (Room room: bookedRooms) {
+            if(room.getRoomGuest()!= null && room.getRoomGuest().getName().equals(nameToFind)){
+                System.out.println("found a matching room " + room.getRoomNumber() + " name " + room.getRoomGuest().getName() +
+                        " surname " + room.getRoomGuest().getSurname());
+                return room.getRoomNumber();
+            }
+        }
+        return -1;
+
+    }
 
 
 }
