@@ -54,31 +54,17 @@ public class RoomManager {
         }
     }
 
-    public Room findRoomWithName(LinkedList<Room>bookedRooms, Guest nameToFind){
+    public Room findRoomWithName(LinkedList<Room>bookedRooms, Guest guestToFind){
 
         for (Room room: bookedRooms) {
-            if(room.getRoomGuest()!= null && room.getRoomGuest().getName().equals(nameToFind)){
-                System.out.println("found a matching room " + room.getRoomNumber() + " name " + room.getRoomGuest().getName() +
-                 " surname " + room.getRoomGuest().getSurname());
+                if(room.getRoomGuest()!= null && room.getRoomGuest().getName().equals(guestToFind.getName()) &&
+                    room.getRoomGuest().getSurname().equals(guestToFind.getSurname()))
                 return room;
-            }
         }
         return null;
-
     }
-// po commito istrink jei grisi
-    public int findRoomNumberWithName(LinkedList<Room>bookedRooms, Guest nameToFind){
 
-        for (Room room: bookedRooms) {
-            if(room.getRoomGuest()!= null && room.getRoomGuest().getName().equals(nameToFind)){
-                System.out.println("found a matching room " + room.getRoomNumber() + " name " + room.getRoomGuest().getName() +
-                        " surname " + room.getRoomGuest().getSurname());
-                return room.getRoomNumber();
-            }
-        }
-        return -1;
 
-    }
 
 
 }

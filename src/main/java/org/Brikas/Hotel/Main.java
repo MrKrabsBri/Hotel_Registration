@@ -54,32 +54,41 @@ public class Main {
         //checking in a guest
 
         GuestManager.checkInGuest(rooms);
+        System.out.println(RoomManager.listOfBookedRooms(rooms));
+
         //guestManager.checkInGuest(rooms,RoomManager.findEmptyRoom(rooms),GuestManager.registerGuest());
-        System.out.println(rooms.get(0).isRoomBooked);
-        System.out.println(rooms.get(1).isRoomBooked);
-        System.out.println(rooms.get(2).isRoomBooked);
-        System.out.println(rooms.get(3).isRoomBooked);
-        System.out.println(rooms.get(4).isRoomBooked);
+//        System.out.println(rooms.get(0).isRoomBooked);
+//        System.out.println(rooms.get(1).isRoomBooked);
+//        System.out.println(rooms.get(2).isRoomBooked);
+//        System.out.println(rooms.get(3).isRoomBooked);
+//        System.out.println(rooms.get(4).isRoomBooked);
+
         GuestManager.checkInGuest(rooms);
-        System.out.println(rooms.get(0).isRoomBooked);
-        System.out.println(rooms.get(1).isRoomBooked);
-        System.out.println(rooms.get(2).isRoomBooked);
-        System.out.println(rooms.get(3).isRoomBooked);
-        System.out.println(rooms.get(4).isRoomBooked);
+        System.out.println(RoomManager.listOfBookedRooms(rooms));
+
+//        System.out.println(rooms.get(0).isRoomBooked);
+//        System.out.println(rooms.get(1).isRoomBooked);
+//        System.out.println(rooms.get(2).isRoomBooked);
+//        System.out.println(rooms.get(3).isRoomBooked);
+//        System.out.println(rooms.get(4).isRoomBooked);
 
         GuestManager.checkOutGuestByName(rooms);
-        System.out.println(rooms.get(0).isRoomBooked);
-        System.out.println(rooms.get(1).isRoomBooked);
-        System.out.println(rooms.get(2).isRoomBooked);
-        System.out.println(rooms.get(3).isRoomBooked);
-        System.out.println(rooms.get(4).isRoomBooked);
+        System.out.println(RoomManager.listOfBookedRooms(rooms));
+//        System.out.println(rooms.get(0).isRoomBooked);
+//        System.out.println(rooms.get(1).isRoomBooked);
+//        System.out.println(rooms.get(2).isRoomBooked);
+//        System.out.println(rooms.get(3).isRoomBooked);
+//        System.out.println(rooms.get(4).isRoomBooked);
         GuestManager.checkOutGuestByName(rooms);
-        System.out.println(rooms.get(0).isRoomBooked);
-        System.out.println(rooms.get(1).isRoomBooked);
-        System.out.println(rooms.get(2).isRoomBooked);
-        System.out.println(rooms.get(3).isRoomBooked);
-        System.out.println(rooms.get(4).isRoomBooked);
+        System.out.println(RoomManager.listOfBookedRooms(rooms));
+//        System.out.println(rooms.get(0).isRoomBooked);
+//        System.out.println(rooms.get(1).isRoomBooked);
+//        System.out.println(rooms.get(2).isRoomBooked);
+//        System.out.println(rooms.get(3).isRoomBooked);
+//        System.out.println(rooms.get(4).isRoomBooked);
+
         GuestManager.checkInGuest(rooms);
+        System.out.println(RoomManager.listOfBookedRooms(rooms));
 //        System.out.println(rooms.get(0).isRoomBooked);
 //        System.out.println(rooms.get(1).isRoomBooked);
 //        System.out.println(rooms.get(2).isRoomBooked);

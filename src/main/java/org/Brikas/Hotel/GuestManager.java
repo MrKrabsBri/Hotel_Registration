@@ -54,22 +54,29 @@ public class GuestManager {
         Guest guestToCheckOut = new Guest(nameToCheckOut,surnameToCheckOut);
         RoomManager roomManager = new RoomManager();
         LinkedList<Room>bookedRooms = roomManager.listOfBookedRooms(listOfRooms);
-       // System.out.println(bookedRooms);//****************
-        System.out.println("test line");
 
         Room roomToCheckOut = roomManager.findRoomWithName(bookedRooms,guestToCheckOut);
+            if (roomToCheckOut == null){ // check exceptions so it doesnt show.
+                System.out.println("No room was found with that guest name");
+            }
 
-                System.out.println("found a matching room " + roomToCheckOut.getRoomNumber() + " name " +
-                roomToCheckOut.getRoomGuest().getSurname() + " surname " + roomToCheckOut.getRoomGuest().getSurname());
-        System.out.println("test line");
-        System.out.println("room to check out "+roomToCheckOut.getRoomNumber());
+//                System.out.println("found a matching room " + roomToCheckOut.getRoomNumber() + " name " +
+//                roomToCheckOut.getRoomGuest().getSurname() + " surname " + roomToCheckOut.getRoomGuest().getSurname());
 
-        roomToCheckOut.setRoomGuest(null);
-        System.out.println("test line");
-        roomToCheckOut.setRoomBooked(false);
-        System.out.println("test line");
-                    System.out.println(guestToCheckOut + " was Checked-Out, room " +
+//        System.out.println("test line");
+//        System.out.println("room to check out "+roomToCheckOut.getRoomNumber());
+
+
+        if (roomToCheckOut != null){
+            roomToCheckOut.setRoomGuest(null);
+            System.out.println("test line");
+            roomToCheckOut.setRoomBooked(false);
+            System.out.println("test line");
+            System.out.println(guestToCheckOut + " was Checked-Out, room " +
                     roomToCheckOut + " is now " + roomToCheckOut.getRoomBooked());
+        }
+
+
 
 
     }
