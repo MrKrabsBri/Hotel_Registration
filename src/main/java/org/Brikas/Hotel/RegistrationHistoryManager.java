@@ -5,6 +5,7 @@ import java.util.LinkedList;
 public class RegistrationHistory {
 
     LinkedList<Guest> listOfAllGuests ;//= new LinkedList<>();
+
     Room room ;
     //Guest guest = new Guest();
 

@@ -37,11 +37,11 @@ public class ClientManager {
         System.out.println("OBJ vardas yra : " + guest.getName() + " " + guest.getSurname());
 
         room.setRoomGuest(guest);// for booked rooms list table
-        room.setRoomStatus(true);// Room is set to : Booked.
+        room.setRoomBooked(true);// Room is set to : Booked.
         registrationRegistry.addToGuestRegistry(listOfAllGuests,guest);// for room history
         //System.out.println("all guests : " + listOfAllGuests);
         //System.out.println("room booked by: " + room.roomBookedBy);//
-        roomManager.addARoomToTheList(rooms,room);
+        roomManager.addARoomToTheBookedList(rooms,room);
        // roomManager.displayRoomList(rooms);
            //  ^^^cia tik optional, reikes on call iskviesti
         return guest;
