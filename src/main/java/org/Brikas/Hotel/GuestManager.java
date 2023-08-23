@@ -43,7 +43,7 @@ public class GuestManager {
 
             roomToCheckInto.setRoomGuest(guestToCheckIn);
             roomToCheckInto.setRoomBooked(true);
-            RegistrationHistoryManager.addToGuestRegistry(roomToCheckInto,guestToCheckIn);
+            RegistrationHistoryManager.addToGuestHistory(roomToCheckInto,guestToCheckIn);
             //roomToCheckInto.addGuestToTheList(guestToCheckIn); GAL GERAS?
             System.out.println(roomToCheckInto.getRoomGuest() + " was checked-in, room " +
                     roomToCheckInto + " is now " + roomToCheckInto.getRoomBooked());

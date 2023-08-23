@@ -13,7 +13,7 @@ public class RegistrationHistoryManager {
 //        this.listOfAllGuests = listOfAllGuests;
 //    }
 
-    public static void addToGuestRegistry(Room room, Guest guest){//LinkedList<Guest>guests
+    public static void addToGuestHistory(Room room, Guest guest){//LinkedList<Guest>guests
 
         //gets a List
         room.addGuestToTheList(guest);

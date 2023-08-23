@@ -41,11 +41,15 @@ public class MenuManager {
                         break;
                     // Add cases for other functions
                     case 3:
-                        System.out.println("Function 3 selected.");
+                        System.out.println("Show list of booked rooms selected.");
+                        System.out.println(RoomManager.listOfBookedRooms(rooms));
+
                         // Add your function 3 implementation
                         break;
                     case 4:
                         System.out.println("Function 4 selected.");
+                        System.out.println(rooms.get(0).getAllGuestsWhoVisited());
+
                         // Add your function 4 implementation
                         break;
                     case 5:
