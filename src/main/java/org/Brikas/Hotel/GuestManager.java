@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class GuestManager {
 
     private static Scanner scanner;
+
     public GuestManager(Scanner scanner){
         this.scanner = scanner;
     }
@@ -35,16 +36,20 @@ public class GuestManager {
 
     public static void checkInGuest(LinkedList<Room>listOfRooms) {
 
-        Guest guestToCheckIn = registerGuest();
-        Room roomToCheckInto = RoomManager.findEmptyRoom(listOfRooms);
+        if(RoomManager.listOfBookedRooms(listOfRooms).size() != (listOfRooms.size())){
 
-        roomToCheckInto.setRoomGuest(guestToCheckIn);
-        roomToCheckInto.setRoomBooked(true);
-        RegistrationHistoryManager.addToGuestRegistry(roomToCheckInto,guestToCheckIn);
-        //roomToCheckInto.addGuestToTheList(guestToCheckIn); GAL GERAS?
-        System.out.println(roomToCheckInto.getRoomGuest() + " was checked-in, room " +
-                roomToCheckInto + " is now " + roomToCheckInto.getRoomBooked());
+            Guest guestToCheckIn = registerGuest();
+            Room roomToCheckInto = RoomManager.findEmptyRoom(listOfRooms);
 
+            roomToCheckInto.setRoomGuest(guestToCheckIn);
+            roomToCheckInto.setRoomBooked(true);
+            RegistrationHistoryManager.addToGuestRegistry(roomToCheckInto,guestToCheckIn);
+            //roomToCheckInto.addGuestToTheList(guestToCheckIn); GAL GERAS?
+            System.out.println(roomToCheckInto.getRoomGuest() + " was checked-in, room " +
+                    roomToCheckInto + " is now " + roomToCheckInto.getRoomBooked());
+
+        }
+        else System.out.println("All rooms are currently booked");
     }
     //checking out room by room number
     public static void checkOutGuestByName (LinkedList<Room>listOfRooms) { //passink visus kambarius
@@ -74,8 +79,13 @@ public class GuestManager {
             System.out.println("test line");
             roomToCheckOut.setRoomBooked(false);
             System.out.println("test line");
-            System.out.println(guestToCheckOut + " was Checked-Out, room " +
-                    roomToCheckOut + " is now " + roomToCheckOut.getRoomBooked());
+            System.out.print(guestToCheckOut + " was Checked-Out, room " +
+                    roomToCheckOut + " is now ");
+                    //+ roomToCheckOut.getRoomBooked());
+                    if (roomToCheckOut.getRoomBooked()){
+                        System.out.println("booked");
+                    }
+                    else System.out.println("available");
         }
 
 

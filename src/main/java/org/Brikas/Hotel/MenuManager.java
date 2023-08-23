@@ -7,16 +7,20 @@ import java.util.LinkedList;
 
 public class MenuManager {
 
+    Room hotelRoom;
+    //static LinkedList<Room>rooms = new LinkedList<>();
+    static Scanner scanner = new Scanner(System.in);
 
-    public static void menuSelection() {
-        Scanner scanner = new Scanner(System.in);
+   // GuestManager guestManager = new GuestManager(scanner);
+
+    public static void runMenu(LinkedList<Room>rooms) {
+
         Guest hotelGuest = new Guest();
+        int selection = 0;
 
-        int selection;
+        //int selection;
         do {
             displayMenu();
-            System.out.println("doing");
-            //displayMenu();
 
             if (scanner.hasNextInt()) {
                 selection = scanner.nextInt();
@@ -24,15 +28,26 @@ public class MenuManager {
 
                 switch (selection) {
                     case 1:
-                        System.out.println("Function 1 selected.");
-                        hotelGuest = new Guest();
+                        System.out.println("Check-in selected.");
+                        GuestManager.checkInGuest(rooms);
+
                         // You can modify this to take input for the guest's details
                         break;
                     case 2:
-                        System.out.println("Function 2 selected.");
+                        System.out.println("Check-out selected.");
+                        GuestManager.checkOutGuestByName(rooms);
+
                         // Add your function 2 implementation
                         break;
                     // Add cases for other functions
+                    case 3:
+                        System.out.println("Function 3 selected.");
+                        // Add your function 3 implementation
+                        break;
+                    case 4:
+                        System.out.println("Function 4 selected.");
+                        // Add your function 4 implementation
+                        break;
                     case 5:
                         System.out.println("Exiting the program.");
                         break;
@@ -45,18 +60,12 @@ public class MenuManager {
                 scanner.nextLine(); // Consume the invalid input
                 continue; // Go back to the beginning of the loop
             }
+        } while (selection != 5);
 
-        }
-            while (selection != 5) ;
-
-        scanner.close(); //????
-            //------------------------------------------------------
-
-
-
-
-
+        scanner.close();
     }
+
+
     public static void displayMenu() {
         System.out.println("Menu:");
         System.out.println("1. Check-in guest");

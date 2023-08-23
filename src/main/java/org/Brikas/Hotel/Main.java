@@ -22,8 +22,13 @@ public class Main {
         Room room5 = new Room(5,isRoomTaken);
         //BrikasHotel brikoHotel = new BrikasHotel(room1,room2,room3,room4,room5);
 
-        GuestManager guestManager = new GuestManager(scanner);
+        GuestManager guestManager = new GuestManager(scanner); // THIS MUST BE HERE
         LinkedList<Room> rooms = new LinkedList<>();//cia gal atskira funkcija
+
+        //MenuManager menu = new MenuManager();
+
+
+
 
 
         rooms.add(room1);
@@ -38,6 +43,10 @@ public class Main {
         System.out.println(rooms.get(4).isRoomBooked);
 
         System.out.println(rooms);
+
+//_______________________________TESTING MENU
+
+       MenuManager.runMenu(rooms);
 
 //TESTING AREA+++++++++++++++++++++++++++++++++++++
         //testing roommanager
