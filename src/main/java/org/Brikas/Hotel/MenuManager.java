@@ -1,8 +1,6 @@
 package org.Brikas.Hotel;
 
 import java.util.Scanner;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.LinkedList;
 
 public class MenuManager {
@@ -47,10 +45,12 @@ public class MenuManager {
                         // Add your function 3 implementation
                         break;
                     case 4:
-                        System.out.println("Function 4 selected.");
-                        System.out.println(rooms.get(0).getAllGuestsWhoVisited());
+                        System.out.println("Guest history of room and current status selected");
+                        //System.out.println(rooms.get(0).getAllGuestsWhoVisited());
+          //             RegistrationHistoryManager.getNumberIndex(rooms)
+                        RegistrationHistoryManager.getRegisteredGuestList(rooms);
 
-                        // Add your function 4 implementation
+
                         break;
                     case 5:
                         System.out.println("Exiting the program.");

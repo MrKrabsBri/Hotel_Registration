@@ -20,6 +20,7 @@ public class RoomManager {
         for (Room hotelRoom: rooms) {
               if(hotelRoom.isRoomBooked){ // if booked
                   bookedRooms.add(hotelRoom);
+                 //ALSO SHOW WHO LIVES IN THE ROOMS
               }
            }
         Collections.sort(bookedRooms, Comparator.comparing(Room::getRoomNumber));//sorting by room number
