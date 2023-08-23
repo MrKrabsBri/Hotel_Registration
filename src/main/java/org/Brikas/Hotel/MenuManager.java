@@ -1,20 +1,87 @@
 package org.Brikas.Hotel;
 
 import java.util.Scanner;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.LinkedList;
 
 public class MenuManager {
 
-////            int selection = scanner.nextInt();
-////            scanner.nextLine();
+
+    public static void menuSelection() {
+        Scanner scanner = new Scanner(System.in);
+        Guest hotelGuest = new Guest();
+
+        int selection;
+        do {
+            displayMenu();
+            System.out.println("doing");
+            //displayMenu();
+
+            if (scanner.hasNextInt()) {
+                selection = scanner.nextInt();
+                scanner.nextLine(); // Consume the newline character
+
+                switch (selection) {
+                    case 1:
+                        System.out.println("Function 1 selected.");
+                        hotelGuest = new Guest();
+                        // You can modify this to take input for the guest's details
+                        break;
+                    case 2:
+                        System.out.println("Function 2 selected.");
+                        // Add your function 2 implementation
+                        break;
+                    // Add cases for other functions
+                    case 5:
+                        System.out.println("Exiting the program.");
+                        break;
+                    default:
+                        System.out.println("Invalid choice. Please enter a valid option.");
+                        break;
+                }
+            } else {
+                System.out.println("Invalid input. Please enter a valid choice.");
+                scanner.nextLine(); // Consume the invalid input
+                continue; // Go back to the beginning of the loop
+            }
+
+        }
+            while (selection != 5) ;
+
+        scanner.close(); //????
+            //------------------------------------------------------
+
+
+
+
+
+    }
+    public static void displayMenu() {
+        System.out.println("Menu:");
+        System.out.println("1. Check-in guest");
+        System.out.println("2. Check-out guest");
+        System.out.println("3. Show list of booked rooms");
+        System.out.println("4. Show guest history of specified room and get it's status");
+        // Add options for other functions
+        System.out.println("5. Exit");
+        System.out.print("Enter your choice: ");
+    }
+}
+
+//            int selection = scanner.nextInt();
+//            scanner.nextLine();
 //            Guest hotelGuest = new Guest();
 //            int selection;
+//
 //            if (scanner.hasNextInt()) {
 //                selection = scanner.nextInt();
 //                scanner.nextLine(); // Consume the newline character
-//            } else {
+//            }
+//            else {
 //                System.out.println("Invalid input. Please enter a valid choice.");
 //                scanner.nextLine(); // Consume the invalid input
-//                continue; // Go back to the beginning of the loop
+//                //continue; // Go back to the beginning of the loop
 //            }
 //
 //            switch(selection){
@@ -54,4 +121,4 @@ public class MenuManager {
 //                    System.out.println("placeholder");
 
 
-}
+

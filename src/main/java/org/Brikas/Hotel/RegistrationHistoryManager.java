@@ -9,12 +9,16 @@ public class RegistrationHistoryManager {
     Room room ;
     //Guest guest = new Guest();
 
-    public RegistrationHistoryManager(Room room, LinkedList<Guest> listOfAllGuests) {// constructor
-        this.listOfAllGuests = listOfAllGuests;
-    }
+//    public RegistrationHistoryManager(LinkedList<Guest> listOfAllGuests, Guest guest) {// constructor
+//        this.listOfAllGuests = listOfAllGuests;
+//    }
 
-    public static void addToGuestRegistry(LinkedList<Guest>listOfAllGuests,Guest guest){//LinkedList<Guest>guests
-        listOfAllGuests.add(guest);
+    public static void addToGuestRegistry(Room room, Guest guest){//LinkedList<Guest>guests
+
+        //gets a List
+        room.addGuestToTheList(guest);
+        System.out.println("added "+ guest + " to the list of guests of this room: list now is : " +
+                room.getAllGuestsWhoVisited()+ "%%%%%%%%%%%%");
     }
 
 }

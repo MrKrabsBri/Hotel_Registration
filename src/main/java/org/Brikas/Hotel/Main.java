@@ -65,7 +65,16 @@ public class Main {
 
         GuestManager.checkInGuest(rooms);
         System.out.println(RoomManager.listOfBookedRooms(rooms));
+        GuestManager.checkOutGuestByName(rooms);
+        GuestManager.checkInGuest(rooms);
+        GuestManager.checkOutGuestByName(rooms);
+        GuestManager.checkInGuest(rooms);
+        GuestManager.checkOutGuestByName(rooms);
+        GuestManager.checkInGuest(rooms);
+        GuestManager.checkOutGuestByName(rooms);
 
+        System.out.println(rooms.get(0).getAllGuestsWhoVisited());
+        System.out.println(rooms.get(0).getRoomBooked());
 //        System.out.println(rooms.get(0).isRoomBooked);
 //        System.out.println(rooms.get(1).isRoomBooked);
 //        System.out.println(rooms.get(2).isRoomBooked);

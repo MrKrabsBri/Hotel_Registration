@@ -5,17 +5,20 @@ import java.util.LinkedList;
 public class Room {
     private int number;
     public boolean isRoomBooked = false ; // po default kambarys neuzimtas
+    public LinkedList<Guest> allGuestsWhoVisited = new LinkedList<>();
+    //public LinkedList<Guest>allGuestsWhoVisited ;// list of guests that visited this room
+
 
     public Room(){}
 
     public Room(int number, boolean roomStatus) {
         this.number = number;
         this.isRoomBooked = roomStatus;
+        this.allGuestsWhoVisited = allGuestsWhoVisited;
     }
-    public boolean isRoomBooked() {
-        return isRoomBooked;
-    }
-
+//    public boolean isRoomBooked() {
+//        return isRoomBooked;
+//    }
     public void setRoomBooked(boolean isRoomBooked) {
         this.isRoomBooked = isRoomBooked;
     }
@@ -25,12 +28,17 @@ public class Room {
     public boolean getRoomBooked(){
         return isRoomBooked;
     }
-
     public void setRoomGuest(Guest roomBookedBy) { // auto setter
         this.roomBookedBy = roomBookedBy;
     }
     public Guest getRoomGuest() {
         return roomBookedBy;
+    }
+    public LinkedList<Guest> getAllGuestsWhoVisited() {
+        return allGuestsWhoVisited;
+    }
+    public void addGuestToTheList(Guest guest){
+        allGuestsWhoVisited.add(guest);
     }
 
 
@@ -38,7 +46,7 @@ public class Room {
 
 
 
-    public LinkedList<Guest>allGuestsWhoVisited ;// list of guests that visited this room
+
 
 
 

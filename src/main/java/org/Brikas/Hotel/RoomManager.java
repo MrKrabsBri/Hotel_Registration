@@ -44,18 +44,17 @@ public class RoomManager {
 
     }
 
-    public static void addARoomToTheBookedList(LinkedList<Room>rooms, Room room){
-        rooms.add(room);
-    }
+    //public static void addARoomToTheBookedList(LinkedList<Room>rooms, Room room){
+//        rooms.add(room);
+//    }
 
-    public void displayRoomList(LinkedList<Room>bookedRooms ){
-        for (Room room:bookedRooms) {
-            System.out.println("Number : " + room.getRoomNumber() + " ;");
-        }
-    }
+//    public void displayRoomList(LinkedList<Room>bookedRooms ){
+//        for (Room room:bookedRooms) {
+//            System.out.println("Number : " + room.getRoomNumber() + " ;");
+//        }
+//    }
 
     public Room findRoomWithName(LinkedList<Room>bookedRooms, Guest guestToFind){
-
         for (Room room: bookedRooms) {
                 if(room.getRoomGuest()!= null && room.getRoomGuest().getName().equals(guestToFind.getName()) &&
                     room.getRoomGuest().getSurname().equals(guestToFind.getSurname()))

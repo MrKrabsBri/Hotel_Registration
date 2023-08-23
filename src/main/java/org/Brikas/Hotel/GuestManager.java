@@ -16,7 +16,7 @@ public class GuestManager {
     LinkedList<Guest>listOfAllGuests = new LinkedList<>();
     Room room = new Room( number, isRoomEmpty);
 
-    RegistrationHistoryManager registrationRegistry = new RegistrationHistoryManager(room, listOfAllGuests);
+    //RegistrationHistoryManager registrationRegistry = new RegistrationHistoryManager(room, listOfAllGuests);
 
     //RoomManager roomManager = new RoomManager();
     LinkedList<Room>rooms = new LinkedList<>();//booked rooms
@@ -40,6 +40,8 @@ public class GuestManager {
 
         roomToCheckInto.setRoomGuest(guestToCheckIn);
         roomToCheckInto.setRoomBooked(true);
+        RegistrationHistoryManager.addToGuestRegistry(roomToCheckInto,guestToCheckIn);
+        //roomToCheckInto.addGuestToTheList(guestToCheckIn); GAL GERAS?
         System.out.println(roomToCheckInto.getRoomGuest() + " was checked-in, room " +
                 roomToCheckInto + " is now " + roomToCheckInto.getRoomBooked());
 
