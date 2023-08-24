@@ -10,22 +10,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d715a7e5-028a-4d51-9aa5-11214a813a85" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Briko_Hotel_jar3.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HotelRoomsSave.bin" beforeDir="false" afterPath="$PROJECT_DIR$/HotelRoomsSave.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Briko_Hotel_jar3/Briko_Hotel.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Briko_Hotel_jar3/Briko_Hotel.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/JuliusBrikasHotel_jar/Briko_Hotel_jar.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JuliusBrikasHotel_jar/Briko_Hotel_jar.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Brikas/Hotel/manifest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/Brikas/Hotel/Guest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Brikas/Hotel/Guest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Brikas/Hotel/GuestManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Brikas/Hotel/GuestManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Brikas/Hotel/GuestManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Brikas/Hotel/GuestManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Brikas/Hotel/RegistrationHistoryManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Brikas/Hotel/RegistrationHistoryManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Brikas/Hotel/RegistrationHistoryManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Brikas/Hotel/RegistrationHistoryManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/Brikas/Hotel/GuestManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Brikas/Hotel/GuestManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/Brikas/Hotel/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Brikas/Hotel/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/Brikas/Hotel/MenuManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Brikas/Hotel/MenuManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/Brikas/Hotel/RegistrationHistoryManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Brikas/Hotel/RegistrationHistoryManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/Brikas/Hotel/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Brikas/Hotel/Room.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/Brikas/Hotel/RoomManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Brikas/Hotel/RoomManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/Brikas/Hotel/SaveManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/Brikas/Hotel/SavingManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Brikas/Hotel/SavingManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/Brikas/Hotel/TestRoomManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/Brikas/Hotel/TestRoomManager.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +73,7 @@
     </key>
   </component>
   <component name="RunManager" selected="JAR Application.juliusbrikashotel">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.Brikas.Hotel.Main" />
       <module name="Briko_Hotel" />
       <extension name="coverage">
@@ -109,11 +103,6 @@
       <item itemvalue="Application.Main" />
       <item itemvalue="JAR Application.juliusbrikashotel" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Main" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

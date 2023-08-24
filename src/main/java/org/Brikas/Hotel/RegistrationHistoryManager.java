@@ -4,10 +4,7 @@ import java.util.LinkedList;
 import java.util.Scanner;
 
 public class RegistrationHistoryManager {
-    //private static Scanner scanner;
-   // public RegistrationHistoryManager(Scanner scanner){
-//        this.scanner = scanner;
-//    }
+
 
     public static void addToGuestHistory(Room room, Guest guest){ //updates history of a room
 
@@ -45,7 +42,7 @@ public class RegistrationHistoryManager {
             return;
         }
 
-        System.out.println("Guest history of room nr. "  );
+        System.out.println("Guest history of room number " + (index+1) );
         System.out.println(new String(new char[93]).replace('\0', '-'));
         LinkedList<Guest> guestsWhoVisited = allRooms.get(index).getAllGuestsWhoVisited();
 

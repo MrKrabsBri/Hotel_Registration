@@ -23,7 +23,6 @@ public class GuestManager {
         System.out.println("Enter the last name of a guest you want to register: ");
         String surname = scanner.nextLine();
         Guest newGuest = new Guest(name,surname);
-        System.out.println("OBJ vardas yra : " + newGuest.getName() + " " + newGuest.getSurname());
         return newGuest;
     }
 
