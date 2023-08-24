@@ -4,20 +4,18 @@ import java.util.LinkedList;
 import java.util.Scanner;
 
 public class RegistrationHistoryManager {
+    //private static Scanner scanner;
+   // public RegistrationHistoryManager(Scanner scanner){
+//        this.scanner = scanner;
+//    }
 
-    private static Scanner scanner;
-
-    public RegistrationHistoryManager(Scanner scanner){
-        this.scanner = scanner;
-    }
-
-    public static void addToGuestHistory(Room room, Guest guest){
+    public static void addToGuestHistory(Room room, Guest guest){ //updates history of a room
 
         room.addGuestToTheList(guest);
         System.out.println("added "+ guest + " to the list of guests of this room. " );
     }
 
-    public static int getNumberIndex(LinkedList<Room>rooms){
+    public static int getNumberIndex(LinkedList<Room>rooms){ // this gets an index, that is used for guest history view
         System.out.println("Enter the room (1 - " + rooms.size() + ") number to view it's guest history, and see availability, to exit - press 0 ");
         Scanner scanner = new Scanner(System.in);
         int roomNrToShow = -1;
@@ -39,7 +37,7 @@ public class RegistrationHistoryManager {
         return roomNrToShow-1;
     }
 
-    public static void getRegisteredGuestList (LinkedList<Room>allRooms){
+    public static void getRegisteredGuestList (LinkedList<Room>allRooms){//retrieve list of guests of a room
         int index = getNumberIndex(allRooms);
 
         if (index == -1) {
@@ -52,7 +50,7 @@ public class RegistrationHistoryManager {
         LinkedList<Guest> guestsWhoVisited = allRooms.get(index).getAllGuestsWhoVisited();
 
         for (Guest guest : guestsWhoVisited) {
-            System.out.format("%-30s%n", guest);//prints row
+            System.out.format("%-30s%n", guest);
         }
 
         System.out.println(new String(new char[93]).replace('\0', '-'));

@@ -11,21 +11,22 @@
   <component name="ChangeListManager">
     <list default="true" id="d715a7e5-028a-4d51-9aa5-11214a813a85" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Brikas/Hotel/Guest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Brikas/Hotel/Guest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HotelRoomsSave.bin" beforeDir="false" afterPath="$PROJECT_DIR$/HotelRoomsSave.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/Brikas/Hotel/GuestManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Brikas/Hotel/GuestManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Brikas/Hotel/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Brikas/Hotel/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Brikas/Hotel/MenuManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Brikas/Hotel/MenuManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/Brikas/Hotel/RegistrationHistoryManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Brikas/Hotel/RegistrationHistoryManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/Brikas/Hotel/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Brikas/Hotel/Room.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/Brikas/Hotel/RoomManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Brikas/Hotel/RoomManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Brikas/Hotel/SaveManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Brikas/Hotel/SaveManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Brikas/Hotel/SaveManager.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/Brikas/Hotel/SavingManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Brikas/Hotel/SavingManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/Brikas/Hotel/Guest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Brikas/Hotel/Guest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/Brikas/Hotel/GuestManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Brikas/Hotel/GuestManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/Brikas/Hotel/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Brikas/Hotel/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/Brikas/Hotel/MenuManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Brikas/Hotel/MenuManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/Brikas/Hotel/RegistrationHistoryManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Brikas/Hotel/RegistrationHistoryManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/Brikas/Hotel/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Brikas/Hotel/Room.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/Brikas/Hotel/RoomManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Brikas/Hotel/RoomManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/Brikas/Hotel/SaveManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/Brikas/Hotel/SavingManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Brikas/Hotel/SavingManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/org/Brikas/Hotel/TestRoomManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/Brikas/Hotel/TestRoomManager.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
