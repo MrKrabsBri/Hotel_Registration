@@ -2,29 +2,9 @@ package org.Brikas.Hotel;
 
 import java.io.*;
 import java.util.LinkedList;
-import java.io.Serializable;
 
 public class SaveManager {
-
     private static String filename;
-    //private static final String filename = "C:/Users/jb196/OneDrive/Desktop/result/bookedRooms.ser";
-            //"data/bookedRooms.ser";
-            // "C:/Users/jb196/OneDrive/Desktop/Java projects/Briko_Hotel/data/bookedRooms.ser";
-
-
-//    public static void saveRooms(LinkedList<Room> savedRooms) {
-//
-//        createDirectoryIfNotExists(filename);
-//
-//        try (ObjectOutputStream outputStream = new ObjectOutputStream(new FileOutputStream(filename))) {
-//            outputStream.writeObject(savedRooms);
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//    }
-
-    //uztenka irasyti LinkedLista su Rooms, ir ant tu rooms running menu,
-    //dar reikia irasyti kambario istorija.
     public static void saveRooms(LinkedList<?> rooms, String filename) {
 
         createDirectoryIfNotExists(filename);
@@ -35,8 +15,7 @@ public class SaveManager {
         } catch (IOException e) {
             e.printStackTrace();
         }
-}
-
+    }
 
     public static LinkedList<Room> loadRooms(String loadFileName) {
         LinkedList<Room>loadRooms = new LinkedList<>();
@@ -49,9 +28,6 @@ public class SaveManager {
         return loadRooms;
     }
 
-
-
-
     private static void createDirectoryIfNotExists(String directoryName) {
         File directory = new File(directoryName);
         if (!directory.exists()) {
@@ -62,5 +38,4 @@ public class SaveManager {
             }
         }
     }
-
 }
