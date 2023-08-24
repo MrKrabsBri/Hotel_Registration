@@ -44,9 +44,9 @@ public class GuestManager {
     //checking out room by guest name
     public static void checkOutGuestByName (LinkedList<Room>listOfRooms) {
 
-        System.out.println("Enter the name of a guest you want to Check-Out: ");
+        System.out.println("Enter the first name of a guest you want to Check-Out: ");
         String nameToCheckOut = scanner.nextLine();
-        System.out.println("Enter the surname of a guest you want to Check-Out: ");
+        System.out.println("Enter the last name of a guest you want to Check-Out: ");
         String surnameToCheckOut = scanner.nextLine();
         Guest guestToCheckOut = new Guest(nameToCheckOut,surnameToCheckOut);
         RoomManager roomManager = new RoomManager();
@@ -59,9 +59,7 @@ public class GuestManager {
 
         if (roomToCheckOut != null){
             roomToCheckOut.setRoomGuest(null);
-            System.out.println("test line");
             roomToCheckOut.setRoomBooked(false);
-            System.out.println("test line");
             System.out.print(guestToCheckOut + " was Checked-Out, room " +
                     roomToCheckOut + " is now ");
 

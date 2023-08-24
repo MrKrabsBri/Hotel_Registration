@@ -13,7 +13,6 @@ public class Room implements Serializable {
     public Room(int number, boolean roomStatus) {
         this.number = number;
         this.isRoomBooked = roomStatus;
-        //this.allGuestsWhoVisited = allGuestsWhoVisited;
     }
 
     public void setRoomBooked(boolean isRoomBooked) {

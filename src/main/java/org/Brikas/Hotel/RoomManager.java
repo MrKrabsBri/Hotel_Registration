@@ -6,7 +6,6 @@ import java.util.LinkedList;
 
 public class RoomManager {
 
-    public void sortRoomList(){}
     static LinkedList<Room>bookedRooms = new LinkedList<>();
     static int fullRooms ;
     private LinkedList<Room> rooms = new LinkedList<>();
@@ -37,7 +36,6 @@ public class RoomManager {
         }
         System.out.println("all rooms are booked, try again later");
         return null;
-
     }
 
     public Room findRoomWithName(LinkedList<Room>bookedRooms, Guest guestToFind){//finds a room of specified guest
