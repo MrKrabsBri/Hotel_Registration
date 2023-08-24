@@ -14,7 +14,8 @@ public class Main {
         boolean exit = false;
         Scanner scanner = new Scanner(System.in);
 
-        String filename = "C:/Users/jb196/OneDrive/Desktop/result/bookedRooms.ser";
+        final String filename = "GuestsTest.bin";
+        //String filename = "C:/Users/jb196/OneDrive/Desktop/result/bookedRooms.ser";
         // String filename = "data/bookedRooms.ser";
         // String filename = "bookedRooms.ser";
         //"data/bookedRooms.ser";
@@ -23,14 +24,21 @@ public class Main {
         //####################################TEST AREA######################################################################################
 
         System.out.println("TESTING STARTS############################");
-
-        Guest testingGuest = new Guest("Julius","Brikas");
-        Room testroom1 = new Room(1,isRoomTaken);
-        Room testroom2 = new Room(2,true);
-        Room testroom3 = new Room(3,isRoomTaken);
-        Room testroom4 = new Room(4,isRoomTaken);
-        Room testroom5 = new Room(5,isRoomTaken);
         LinkedList<Room> testrooms = new LinkedList<>();//cia gal atskira funkcija
+        testrooms =  WriteObjects.readObjectsFromFile(filename);
+        System.out.println("testrooms:" + testrooms);
+
+        System.out.println("creating new file");
+        WriteObjects.writeToFile(filename,testrooms);
+
+
+        //Guest testingGuest = new Guest("Julius","Brikas");
+        Room testroom1 = new Room(1,true);
+        Room testroom2 = new Room(2,true);
+        Room testroom3 = new Room(3,false);
+        Room testroom4 = new Room(4,true);
+        Room testroom5 = new Room(5,true);
+
         testrooms.add(testroom1);
         testrooms.add(testroom2);
         testrooms.add(testroom3);
@@ -43,7 +51,7 @@ public class Main {
         System.out.println(testrooms.get(4).isRoomBooked);
 
 
-        //works
+        //works!!!!!!!!!!! jei function neveiks
 //        try ( FileOutputStream fs = new FileOutputStream("Guests.bin")) {
 //            ObjectOutputStream os = new ObjectOutputStream(fs);
 //            os.writeObject(testingGuest);
@@ -57,47 +65,73 @@ public class Main {
 //            e.printStackTrace();
 //        }
 
-
-
-
-        testrooms.get(0).setRoomBooked(true);
+//UNCOMMENT
+        //WriteObjects.writeToFile(filename,testrooms);
+        System.out.println(testrooms);
         System.out.println(testrooms.get(0).isRoomBooked);
         System.out.println(testrooms.get(1).isRoomBooked);
         System.out.println(testrooms.get(2).isRoomBooked);
         System.out.println(testrooms.get(3).isRoomBooked);
         System.out.println(testrooms.get(4).isRoomBooked);
+
+        testrooms =  WriteObjects.readObjectsFromFile(filename);
+        System.out.println(testrooms);
+
+//UNCOMMENT
+       // WriteObjects.writeToFile(filename,testrooms);
+
+
+
+
+
+
+        testrooms.get(0).setRoomBooked(false);
+        System.out.println(testrooms.get(0).isRoomBooked);
+        System.out.println(testrooms.get(1).isRoomBooked);
+        System.out.println(testrooms.get(2).isRoomBooked);
+        System.out.println(testrooms.get(3).isRoomBooked);
+        System.out.println(testrooms.get(4).isRoomBooked);
+
+        testrooms =  WriteObjects.readObjectsFromFile(filename);
+        System.out.println(testrooms.get(0).isRoomBooked);
+        System.out.println(testrooms.get(1).isRoomBooked);
+        System.out.println(testrooms.get(2).isRoomBooked);
+        System.out.println(testrooms.get(3).isRoomBooked);
+        System.out.println(testrooms.get(4).isRoomBooked);
+
         //READing
 
-        try(FileInputStream fi = new FileInputStream("Guests.bin")){
-
-            ObjectInputStream os = new ObjectInputStream(fi);
-
-            Guest readGuest1 = (Guest)os.readObject();
-            LinkedList<Room> readRooms1 = (LinkedList<Room>) os.readObject();
-            os.close();
-
-            System.out.println("READ OBJECTS");
-            System.out.println(readGuest1);
-            System.out.println(readRooms1);
-            testrooms = readRooms1;
-            System.out.println(testrooms.get(0).isRoomBooked);
-            System.out.println(testrooms.get(1).isRoomBooked);
-            System.out.println(testrooms.get(2).isRoomBooked);
-            System.out.println(testrooms.get(3).isRoomBooked);
-            System.out.println(testrooms.get(4).isRoomBooked);
-            System.out.println("READ OBJECTS ENDS");
-
-
-        } catch (FileNotFoundException e) {
-            //throw new RuntimeException(e);
-            e.printStackTrace();
-        } catch (IOException e) {
-            //throw new RuntimeException(e);
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
-            //throw new RuntimeException(e);
-            e.printStackTrace();
-        }
+        //Works!!!!!!!!!!!!!!!!!! jei function neveiks
+//        try(FileInputStream fi = new FileInputStream("Guests.bin")){
+//
+//            ObjectInputStream os = new ObjectInputStream(fi);
+//
+//            Guest readGuest1 = (Guest)os.readObject();
+//            LinkedList<Room> readRooms1 = (LinkedList<Room>) os.readObject();
+//            os.close();
+//
+//            System.out.println("READ OBJECTS");
+//            System.out.println(readGuest1);
+//            System.out.println(readRooms1);
+//            testrooms = readRooms1;
+//            System.out.println(testrooms.get(0).isRoomBooked);
+//            System.out.println(testrooms.get(1).isRoomBooked);
+//            System.out.println(testrooms.get(2).isRoomBooked);
+//            System.out.println(testrooms.get(3).isRoomBooked);
+//            System.out.println(testrooms.get(4).isRoomBooked);
+//            System.out.println("READ OBJECTS ENDS");
+//
+//
+//        } catch (FileNotFoundException e) {
+//            //throw new RuntimeException(e);
+//            e.printStackTrace();
+//        } catch (IOException e) {
+//            //throw new RuntimeException(e);
+//            e.printStackTrace();
+//        } catch (ClassNotFoundException e) {
+//            //throw new RuntimeException(e);
+//            e.printStackTrace();
+//        }
 
 
 //
