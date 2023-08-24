@@ -23,20 +23,7 @@ public class Main {
         //####################################TEST AREA######################################################################################
 
         System.out.println("TESTING STARTS########################################################");
-//        Room testroom1 = new Room(1,false);
-//        Room testroom2 = new Room(2,false);
-//        Room testroom3 = new Room(3,false);
-//        Room testroom4 = new Room(4,false);
-//        Room testroom5 = new Room(5,false);
-         //testrooms = new LinkedList<>();
-//        testrooms.add(testroom1);
-//        testrooms.add(testroom2);
-//        testrooms.add(testroom3);
-//        testrooms.add(testroom4);
-//        testrooms.add(testroom5);
 
-//        System.out.println(testrooms);
-//        System.out.println(testrooms.get(0).getRoomBooked() +" "+ testrooms.get(1).getRoomBooked());
 
         LinkedList<Room> testrooms = SavingManager.readObjectsFromFile(filename);// TESTING
        GuestManager guestManager = new GuestManager(scanner); // THIS MUST BE HERE
@@ -47,7 +34,14 @@ public class Main {
 
         MenuManager.runMenu(filename,testrooms);
 
-        //SavingManager.writeToFile(filename,)
+
+//        System.out.format("%-30s|%-30s|%-30s%n", "Column 1", "Column 2", "Column 3");//print header
+//        System.out.println(new String(new char[93]).replace('\0', '-')); // Adjust length as needed
+//        System.out.format("%-30s|%-30.30s|%-30s%n", testrooms.get(0), testrooms.get(0).getRoomBooked(), testrooms.get(0).getRoomGuest());//prints row
+//       // System.out.println(new String(new char[93]).replace('\0', '-')); // print separator // Adjust length as needed
+//        System.out.format("%-30s|%-30.30s|%-30s%n", testrooms.get(1), testrooms.get(1).getRoomBooked(), testrooms.get(1).getRoomGuest());//prints row
+//        System.out.println(new String(new char[93]).replace('\0', '-')); // Adjust length as needed
+
 
         scanner.close();//close scanner here
 //TESTING finished+++++++++++++++++++++++++++++++++++++#######################################

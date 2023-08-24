@@ -65,15 +65,24 @@ public class RegistrationHistoryManager {
         }
 
         //displayInfo() here
-        System.out.println("Guest history of room nr. " + allRooms.get(index) );
-        System.out.println(allRooms.get(index).getAllGuestsWhoVisited());
+        System.out.println("Guest history of room nr. "  );
+        System.out.println(new String(new char[93]).replace('\0', '-')); // Adjust length as needed
 
+        LinkedList<Guest> guestsWhoVisited = allRooms.get(index).getAllGuestsWhoVisited();
+
+        for (Guest guest : guestsWhoVisited) {
+            System.out.format("%-30s%n", guest);//prints row
+        }
+
+
+        //System.out.println(allRooms.get(index).getAllGuestsWhoVisited()); istrink sita kai lentele printins
+        System.out.println(new String(new char[93]).replace('\0', '-')); // Adjust length as needed
         System.out.print(( "This room is now: "));
         if(allRooms.get(index).isRoomBooked){
             System.out.println("Booked");
         }
         else System.out.println("Available");
-
+        System.out.println(new String(new char[93]).replace('\0', '-')); // Adjust length as needed
     }
 
 

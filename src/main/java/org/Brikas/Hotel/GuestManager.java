@@ -23,9 +23,9 @@ public class GuestManager {
     LinkedList<Room>rooms = new LinkedList<>();//booked rooms
 
     public static Guest registerGuest(){
-        System.out.println("Enter the name of a guest you want to register: ");
+        System.out.println("Enter the first name of a guest you want to register: ");
         String name = scanner.nextLine();//guest.getName();
-        System.out.println("Enter the surname of a guest you want to register: ");
+        System.out.println("Enter the last name of a guest you want to register: ");
         String surname = scanner.nextLine();//guest.getName();
         Guest newGuest = new Guest(name,surname);
         //newGuest.setName(name);
@@ -45,8 +45,12 @@ public class GuestManager {
             roomToCheckInto.setRoomBooked(true);
             RegistrationHistoryManager.addToGuestHistory(roomToCheckInto,guestToCheckIn);
             //roomToCheckInto.addGuestToTheList(guestToCheckIn); GAL GERAS?
-            System.out.println(roomToCheckInto.getRoomGuest() + " was checked-in, room " +
-                    roomToCheckInto + " is now " + roomToCheckInto.getRoomBooked());
+            System.out.println(roomToCheckInto.getRoomGuest() + " was checked-in, " +
+                    roomToCheckInto + " is now booked");// + roomToCheckInto.getRoomBooked());
+//            if( roomToCheckInto.getRoomBooked()){
+//                System.out.println("booked");
+//            }
+//            else System.out.println("available");
 
         }
         else System.out.println("All rooms are currently booked");

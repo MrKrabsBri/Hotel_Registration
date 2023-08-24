@@ -40,9 +40,28 @@ public class MenuManager {
                         break;
                     // Add cases for other functions
                     case 3:
-                        System.out.println("Show list of booked rooms selected.");
-                        System.out.println(RoomManager.listOfBookedRooms(rooms));
+                        System.out.println("Showing list of booked rooms and their guests");
+                        System.out.println(RoomManager.listOfBookedRooms(rooms));//istrink po to jei lentele rodo gerai
+                        System.out.format("%-30s%-30s%n", "Room number", "Guest Name");//print header
+                        System.out.println(new String(new char[93]).replace('\0', '-')); // Adjust length as needed
+                        //added sita
+                        for (Room hotelRoom: rooms) {
 
+                            if(hotelRoom.isRoomBooked){ // if booked
+
+
+                                System.out.format("%-30s %-30s%n", hotelRoom,  hotelRoom.getRoomGuest());//prints row
+                                // System.out.println(new String(new char[93]).replace('\0', '-')); // print separator // Adjust length as needed
+
+
+                                //System.out.println("Room " + hotelRoom.getRoomNumber() +" - Booked by : "+ hotelRoom.getRoomGuest());
+
+                                //bookedRooms.add(hotelRoom);
+                                //ALSO SHOW WHO LIVES IN THE ROOMS
+                            }
+
+                        }
+                        System.out.println(new String(new char[93]).replace('\0', '-')); // Adjust length as needed
                         // Add your function 3 implementation
                         break;
                     case 4:

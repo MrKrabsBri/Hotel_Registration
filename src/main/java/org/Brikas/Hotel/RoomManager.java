@@ -12,6 +12,7 @@ public class RoomManager {
 
    static LinkedList<Room>bookedRooms = new LinkedList<>();
     static int fullRooms ;
+    private LinkedList<Room> rooms = new LinkedList<>();//delete
 
     // ar tikrai static, kadangi sukuriamas bookedRooms?
     public static LinkedList<Room> listOfBookedRooms(LinkedList<Room>rooms){ // think about array list
@@ -19,6 +20,7 @@ public class RoomManager {
         bookedRooms.clear();
         for (Room hotelRoom: rooms) {
               if(hotelRoom.isRoomBooked){ // if booked
+                 // System.out.println("Room " + hotelRoom.getRoomNumber() +" - Booked by : "+ hotelRoom.getRoomGuest());
                   bookedRooms.add(hotelRoom);
                  //ALSO SHOW WHO LIVES IN THE ROOMS
               }
@@ -31,6 +33,7 @@ public class RoomManager {
         //CALL A displayInfo() FUNCTION
         return bookedRooms;
     }
+
 
 
     public static Room findEmptyRoom(LinkedList<Room>listOfRooms){//returns first empty room
@@ -65,6 +68,19 @@ public class RoomManager {
     }
 
 
+    @Override
+    public String toString() {
+        StringBuilder table = new StringBuilder();
+        table.append("+------------+----------------------+---------------------------------------------+\n");
+        table.append("| Room Number| Status               | Guest Name           |\n");
+        table.append("+------------+----------------------+---------------------------------------------+\n");
 
+        for (Room room : rooms) {
+            table.append(room).append('\n');
+        }
+
+        table.append("+------------+----------------------+----------------------+\n");
+        return table.toString();
+    }
 
 }
