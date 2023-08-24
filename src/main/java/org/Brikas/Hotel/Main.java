@@ -12,10 +12,36 @@ public class Main {
         boolean isRoomTaken = false;
         boolean exit = false;
         Scanner scanner = new Scanner(System.in);
+
+        String filename = "C:/Users/jb196/OneDrive/Desktop/result/bookedRooms.ser";
+        // String filename = "data/bookedRooms.ser";
+        // String filename = "bookedRooms.ser";
+        //"data/bookedRooms.ser";
+        // "C:/Users/jb196/OneDrive/Desktop/Java projects/Briko_Hotel/data/bookedRooms.ser";
+
+        //####################################TEST AREA#############################################
+
+//        System.out.println("LOADING HERE");
+//
+//        LinkedList<Room>loadedRooms = SaveManager.loadRooms(filename);
+//
+//        System.out.println("Loaded rooms:");
+//        for (Room room : loadedRooms) {
+//            System.out.println(room);
+//        }
+//
+//        System.out.println("LOADING ENDS");
+
+        //#################################################################################
+
+
+
         LinkedList<Guest>listOfAllGuestsOfRoom = new LinkedList<>();
         LinkedList<Room>listOfAllBookedRooms = new LinkedList<>();
 
-        
+        LinkedList<Room>saveRooms = new LinkedList<>();
+        LinkedList<Room>loadRooms = new LinkedList<>();
+
 
         Room room1 = new Room(1,isRoomTaken);
         Room room2 = new Room(2,isRoomTaken);
@@ -43,12 +69,18 @@ public class Main {
         System.out.println(rooms.get(4).isRoomBooked);
 
         System.out.println(rooms);
+        System.out.println("Working Directory: " + System.getProperty("user.dir"));
 
-//_______________________________TESTING MENU
+//_______________________________TESTING MENU############################################
 
        MenuManager.runMenu(rooms);
+                    //System.out.println(RoomManager.listOfBookedRooms(rooms));
+        // SaveManager.saveRooms(RoomManager.listOfBookedRooms(rooms),filename);
+                     //LinkedList<Room>loadedRooms = loadRooms(filename);
 
-//TESTING AREA+++++++++++++++++++++++++++++++++++++
+
+        System.out.println("cia baigiasi test");
+//TESTING AREA+++++++++++++++++++++++++++++++++++++#######################################
         //testing roommanager
        // GuestManager guestManager1 = new GuestManager(scanner);
 
@@ -62,8 +94,8 @@ public class Main {
 
         //checking in a guest
 
-        GuestManager.checkInGuest(rooms);
-        System.out.println(RoomManager.listOfBookedRooms(rooms));
+//        GuestManager.checkInGuest(rooms);
+//        System.out.println(RoomManager.listOfBookedRooms(rooms));
 
         //guestManager.checkInGuest(rooms,RoomManager.findEmptyRoom(rooms),GuestManager.registerGuest());
 //        System.out.println(rooms.get(0).isRoomBooked);
@@ -72,41 +104,41 @@ public class Main {
 //        System.out.println(rooms.get(3).isRoomBooked);
 //        System.out.println(rooms.get(4).isRoomBooked);
 
-        GuestManager.checkInGuest(rooms);
-        System.out.println(RoomManager.listOfBookedRooms(rooms));
-        GuestManager.checkOutGuestByName(rooms);
-        GuestManager.checkInGuest(rooms);
-        GuestManager.checkOutGuestByName(rooms);
-        GuestManager.checkInGuest(rooms);
-        GuestManager.checkOutGuestByName(rooms);
-        GuestManager.checkInGuest(rooms);
-        GuestManager.checkOutGuestByName(rooms);
-
-        System.out.println(rooms.get(0).getAllGuestsWhoVisited());
-        System.out.println(rooms.get(0).getRoomBooked());
+//        GuestManager.checkInGuest(rooms);
+//        System.out.println(RoomManager.listOfBookedRooms(rooms));
+//        GuestManager.checkOutGuestByName(rooms);
+//        GuestManager.checkInGuest(rooms);
+//        GuestManager.checkOutGuestByName(rooms);
+//        GuestManager.checkInGuest(rooms);
+//        GuestManager.checkOutGuestByName(rooms);
+//        GuestManager.checkInGuest(rooms);
+//        GuestManager.checkOutGuestByName(rooms);
+//
+//        System.out.println(rooms.get(0).getAllGuestsWhoVisited());
+//        System.out.println(rooms.get(0).getRoomBooked());
 //        System.out.println(rooms.get(0).isRoomBooked);
 //        System.out.println(rooms.get(1).isRoomBooked);
 //        System.out.println(rooms.get(2).isRoomBooked);
 //        System.out.println(rooms.get(3).isRoomBooked);
 //        System.out.println(rooms.get(4).isRoomBooked);
 
-        GuestManager.checkOutGuestByName(rooms);
-        System.out.println(RoomManager.listOfBookedRooms(rooms));
+//        GuestManager.checkOutGuestByName(rooms);
+//        System.out.println(RoomManager.listOfBookedRooms(rooms));
 //        System.out.println(rooms.get(0).isRoomBooked);
 //        System.out.println(rooms.get(1).isRoomBooked);
 //        System.out.println(rooms.get(2).isRoomBooked);
 //        System.out.println(rooms.get(3).isRoomBooked);
 //        System.out.println(rooms.get(4).isRoomBooked);
-        GuestManager.checkOutGuestByName(rooms);
-        System.out.println(RoomManager.listOfBookedRooms(rooms));
+//        GuestManager.checkOutGuestByName(rooms);
+//        System.out.println(RoomManager.listOfBookedRooms(rooms));
 //        System.out.println(rooms.get(0).isRoomBooked);
 //        System.out.println(rooms.get(1).isRoomBooked);
 //        System.out.println(rooms.get(2).isRoomBooked);
 //        System.out.println(rooms.get(3).isRoomBooked);
 //        System.out.println(rooms.get(4).isRoomBooked);
 
-        GuestManager.checkInGuest(rooms);
-        System.out.println(RoomManager.listOfBookedRooms(rooms));
+//        GuestManager.checkInGuest(rooms);
+//        System.out.println(RoomManager.listOfBookedRooms(rooms));
 //        System.out.println(rooms.get(0).isRoomBooked);
 //        System.out.println(rooms.get(1).isRoomBooked);
 //        System.out.println(rooms.get(2).isRoomBooked);

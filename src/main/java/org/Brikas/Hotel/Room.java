@@ -1,8 +1,9 @@
 package org.Brikas.Hotel;
 
+import java.io.Serializable;
 import java.util.LinkedList;
 
-public class Room {
+public class Room implements Serializable {
     private int number;
     public boolean isRoomBooked = false ; // po default kambarys neuzimtas
     public LinkedList<Guest> allGuestsWhoVisited = new LinkedList<>();
