@@ -15,6 +15,8 @@ public class Main {
         LinkedList<Guest>listOfAllGuestsOfRoom = new LinkedList<>();
         LinkedList<Room>listOfAllBookedRooms = new LinkedList<>();
 
+        
+
         Room room1 = new Room(1,isRoomTaken);
         Room room2 = new Room(2,isRoomTaken);
         Room room3 = new Room(3,isRoomTaken);
@@ -25,10 +27,6 @@ public class Main {
         GuestManager guestManager = new GuestManager(scanner); // THIS MUST BE HERE
         LinkedList<Room> rooms = new LinkedList<>();//cia gal atskira funkcija
 
-        //MenuManager menu = new MenuManager();
-
-
-
 
 
         rooms.add(room1);
@@ -36,6 +34,8 @@ public class Main {
         rooms.add(room3);
         rooms.add(room4);
         rooms.add(room5);
+
+
         System.out.println(rooms.get(0).isRoomBooked);
         System.out.println(rooms.get(1).isRoomBooked);
         System.out.println(rooms.get(2).isRoomBooked);
