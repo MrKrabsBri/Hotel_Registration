@@ -60,7 +60,8 @@ public class RegistrationHistoryManager {
         if (index == -1) {
             System.out.println("returning to menu");
             //RegistrationHistoryManager.getRegisteredGuestList(allRooms);
-            MenuManager.runMenu(allRooms);
+            //MenuManager.runMenu(allRooms); turbut istrint galiu
+            return;
         }
 
         //displayInfo() here

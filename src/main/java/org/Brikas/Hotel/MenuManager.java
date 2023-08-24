@@ -11,7 +11,7 @@ public class MenuManager {
 
    // GuestManager guestManager = new GuestManager(scanner);
 
-    public static void runMenu(LinkedList<Room>rooms) {
+    public static void runMenu(String filename, LinkedList<Room>rooms) {
 
         Guest hotelGuest = new Guest();
         int selection = 0;
@@ -28,6 +28,7 @@ public class MenuManager {
                     case 1:
                         System.out.println("Check-in selected.");
                         GuestManager.checkInGuest(rooms);
+                        //SavingManager.writeToFile();
 
                         // You can modify this to take input for the guest's details
                         break;
@@ -65,7 +66,7 @@ public class MenuManager {
                 continue; // Go back to the beginning of the loop
             }
         } while (selection != 5);
-
+        SavingManager.writeToFile(filename,rooms);
         scanner.close();
     }
 
