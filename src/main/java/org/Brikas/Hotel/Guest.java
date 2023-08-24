@@ -14,7 +14,6 @@ public class Guest implements Serializable {
         this.surname = surname;
     }
 
-
     public String getName() {
         return name;
     }
@@ -25,7 +24,6 @@ public class Guest implements Serializable {
     public void setName(String name) {
         this.name = name;
     }
-
     public void setSurname(String surname) {
         this.surname = surname;
     }
@@ -34,5 +32,4 @@ public class Guest implements Serializable {
     public String toString(){
         return name + " " + surname;
     }
-
 }
