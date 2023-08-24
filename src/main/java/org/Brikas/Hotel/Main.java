@@ -2,7 +2,6 @@ package org.Brikas.Hotel;
 
 
 
-import java.io.*;
 import java.util.LinkedList;
 import java.util.Scanner;
 
@@ -24,20 +23,20 @@ public class Main {
         //####################################TEST AREA######################################################################################
 
         System.out.println("TESTING STARTS############################");
-        LinkedList<Room> testrooms = new LinkedList<>();//cia gal atskira funkcija
-        testrooms =  WriteObjects.readObjectsFromFile(filename);
-        System.out.println("testrooms:" + testrooms);
-
-        System.out.println("creating new file");
-        WriteObjects.writeToFile(filename,testrooms);
-
-
-        //Guest testingGuest = new Guest("Julius","Brikas");
-        Room testroom1 = new Room(1,true);
-        Room testroom2 = new Room(2,true);
+        Room testroom1 = new Room(1,false);
+        Room testroom2 = new Room(2,false);
         Room testroom3 = new Room(3,false);
-        Room testroom4 = new Room(4,true);
-        Room testroom5 = new Room(5,true);
+        Room testroom4 = new Room(4,false);
+        Room testroom5 = new Room(5,false);
+
+        LinkedList<Room> testrooms = new LinkedList<>();
+        testrooms =  SavingManager.readObjectsFromFile(filename);
+        GuestManager guestManager = new GuestManager(scanner); // THIS MUST BE HERE
+
+
+
+
+
 
         testrooms.add(testroom1);
         testrooms.add(testroom2);
@@ -66,7 +65,7 @@ public class Main {
 //        }
 
 //UNCOMMENT
-        //WriteObjects.writeToFile(filename,testrooms);
+        //SavingManager.writeToFile(filename,testrooms);
         System.out.println(testrooms);
         System.out.println(testrooms.get(0).isRoomBooked);
         System.out.println(testrooms.get(1).isRoomBooked);
@@ -74,25 +73,25 @@ public class Main {
         System.out.println(testrooms.get(3).isRoomBooked);
         System.out.println(testrooms.get(4).isRoomBooked);
 
-        testrooms =  WriteObjects.readObjectsFromFile(filename);
-        System.out.println(testrooms);
+        testrooms =  SavingManager.readObjectsFromFile(filename);
+        System.out.println(testrooms.size());
 
 //UNCOMMENT
-       // WriteObjects.writeToFile(filename,testrooms);
+       // SavingManager.writeToFile(filename,testrooms);
 
 
 
 
 
 
-        testrooms.get(0).setRoomBooked(false);
+       // testrooms.get(0).setRoomBooked(false);
         System.out.println(testrooms.get(0).isRoomBooked);
         System.out.println(testrooms.get(1).isRoomBooked);
         System.out.println(testrooms.get(2).isRoomBooked);
         System.out.println(testrooms.get(3).isRoomBooked);
         System.out.println(testrooms.get(4).isRoomBooked);
 
-        testrooms =  WriteObjects.readObjectsFromFile(filename);
+        testrooms =  SavingManager.readObjectsFromFile(filename);
         System.out.println(testrooms.get(0).isRoomBooked);
         System.out.println(testrooms.get(1).isRoomBooked);
         System.out.println(testrooms.get(2).isRoomBooked);

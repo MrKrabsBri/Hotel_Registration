@@ -76,7 +76,6 @@ public class MenuManager {
         System.out.println("2. Check-out guest");
         System.out.println("3. Show list of booked rooms");
         System.out.println("4. Show guest history of specified room and get it's status");
-        // Add options for other functions
         System.out.println("5. Exit");
         System.out.print("Enter your choice: ");
     }
