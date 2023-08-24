@@ -10,14 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d715a7e5-028a-4d51-9aa5-11214a813a85" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Briko_Hotel_jar3.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HotelRoomsSave.bin" beforeDir="false" afterPath="$PROJECT_DIR$/HotelRoomsSave.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Brikas/Hotel/GuestManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Brikas/Hotel/GuestManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Brikas/Hotel/RegistrationHistoryManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Brikas/Hotel/RegistrationHistoryManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Brikas/Hotel/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Brikas/Hotel/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Brikas/Hotel/RoomManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Brikas/Hotel/RoomManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Brikas/Hotel/SaveManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Brikas/Hotel/SavingManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Brikas/Hotel/SavingManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JuliusBrikasHotel_jar/Briko_Hotel_jar.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JuliusBrikasHotel_jar/Briko_Hotel_jar.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Brikas/Hotel/manifest.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/Brikas/Hotel/Guest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Brikas/Hotel/Guest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/Brikas/Hotel/GuestManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Brikas/Hotel/GuestManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/Brikas/Hotel/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Brikas/Hotel/Main.class" afterDir="false" />
@@ -27,6 +24,7 @@
       <change beforePath="$PROJECT_DIR$/target/classes/org/Brikas/Hotel/RoomManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Brikas/Hotel/RoomManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/Brikas/Hotel/SaveManager.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/Brikas/Hotel/SavingManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Brikas/Hotel/SavingManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/org/Brikas/Hotel/TestRoomManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/Brikas/Hotel/TestRoomManager.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +59,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/jb196/OneDrive/Desktop/Java projects/Briko_Hotel/out/artifacts/Briko_Hotel_jar2/Briko_Hotel.jar",
+    "last_opened_file_path": "C:/Users/jb196/OneDrive/Desktop/Java projects/Briko_Hotel/out/artifacts/Briko_Hotel_jar3/Briko_Hotel.jar",
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -80,7 +78,7 @@
       <recent name="org.Brikas.Hotel" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JAR Application.juliusbrikashotel">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.Brikas.Hotel.Main" />
       <module name="Briko_Hotel" />
@@ -95,10 +93,13 @@
       </method>
     </configuration>
     <configuration name="juliusbrikashotel" type="JarApplication">
-      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/Briko_Hotel_jar2/Briko_Hotel.jar" />
+      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/Briko_Hotel_jar3/Briko_Hotel.jar" />
       <option name="WORKING_DIRECTORY" value="C:\Users\jb196\OneDrive\Desktop\Java projects\Briko_Hotel" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Briko_Hotel:jar3" />
+        </option>
         <option name="BuildArtifacts" enabled="true">
           <artifact name="Briko_Hotel:jar" />
         </option>
