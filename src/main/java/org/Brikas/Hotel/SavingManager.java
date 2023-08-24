@@ -55,7 +55,18 @@ public class SavingManager {
 
             if (!file.exists()) {
                 // Create an empty file with an empty linked list
-                writeToFile(filename, new LinkedList<>());
+                Room testroom1 = new Room(1,false);
+                Room testroom2 = new Room(2,false);
+                Room testroom3 = new Room(3,false);
+                Room testroom4 = new Room(4,false);
+                Room testroom5 = new Room(5,false);
+                readRooms.add(testroom1);
+                readRooms.add(testroom2);
+                readRooms.add(testroom3);
+                readRooms.add(testroom4);
+                readRooms.add(testroom5);
+
+                writeToFile(filename, readRooms);
                 System.out.println("Created empty file: " + filename);
             }
 

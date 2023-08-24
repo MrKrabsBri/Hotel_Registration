@@ -22,16 +22,24 @@ public class Main {
 
         //####################################TEST AREA######################################################################################
 
-        System.out.println("TESTING STARTS############################");
-        Room testroom1 = new Room(1,false);
-        Room testroom2 = new Room(2,false);
-        Room testroom3 = new Room(3,false);
-        Room testroom4 = new Room(4,false);
-        Room testroom5 = new Room(5,false);
-
+        System.out.println("TESTING STARTS########################################################");
+//        Room testroom1 = new Room(1,false);
+//        Room testroom2 = new Room(2,false);
+//        Room testroom3 = new Room(3,false);
+//        Room testroom4 = new Room(4,false);
+//        Room testroom5 = new Room(5,false);
         LinkedList<Room> testrooms = new LinkedList<>();
-        testrooms =  SavingManager.readObjectsFromFile(filename);
-        GuestManager guestManager = new GuestManager(scanner); // THIS MUST BE HERE
+//        testrooms.add(testroom1);
+//        testrooms.add(testroom2);
+//        testrooms.add(testroom3);
+//        testrooms.add(testroom4);
+//        testrooms.add(testroom5);
+
+//        System.out.println(testrooms);
+//        System.out.println(testrooms.get(0).getRoomBooked() +" "+ testrooms.get(1).getRoomBooked());
+
+       testrooms = SavingManager.readObjectsFromFile(filename);// TESTING
+       GuestManager guestManager = new GuestManager(scanner); // THIS MUST BE HERE
 
 //_______________________________TESTING MENU########################################################
 
