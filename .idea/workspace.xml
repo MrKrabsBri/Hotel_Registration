@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d715a7e5-028a-4d51-9aa5-11214a813a85" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/GuestsTest.bin" beforeDir="false" afterPath="$PROJECT_DIR$/GuestsTest.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Brikas/Hotel/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Brikas/Hotel/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Brikas/Hotel/MenuManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Brikas/Hotel/MenuManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Brikas/Hotel/RegistrationHistoryManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Brikas/Hotel/RegistrationHistoryManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/Brikas/Hotel/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Brikas/Hotel/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/Brikas/Hotel/MenuManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Brikas/Hotel/MenuManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,24 +87,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/org/Brikas/Hotel/RoomManager.java</url>
-          <line>57</line>
-          <properties class="org.Brikas.Hotel.RoomManager" method="findRoomWithName">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/org/Brikas/Hotel/GuestManager.java</url>
-          <line>54</line>
-          <properties class="org.Brikas.Hotel.GuestManager" method="checkOutGuestByName">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="5" />
