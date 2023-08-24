@@ -2,6 +2,7 @@ package org.Brikas.Hotel;
 
 
 
+import java.io.*;
 import java.util.LinkedList;
 import java.util.Scanner;
 
@@ -19,9 +20,86 @@ public class Main {
         //"data/bookedRooms.ser";
         // "C:/Users/jb196/OneDrive/Desktop/Java projects/Briko_Hotel/data/bookedRooms.ser";
 
-        //####################################TEST AREA#############################################
+        //####################################TEST AREA######################################################################################
 
-//        System.out.println("LOADING HERE");
+        System.out.println("TESTING STARTS############################");
+
+        Guest testingGuest = new Guest("Julius","Brikas");
+        Room testroom1 = new Room(1,isRoomTaken);
+        Room testroom2 = new Room(2,true);
+        Room testroom3 = new Room(3,isRoomTaken);
+        Room testroom4 = new Room(4,isRoomTaken);
+        Room testroom5 = new Room(5,isRoomTaken);
+        LinkedList<Room> testrooms = new LinkedList<>();//cia gal atskira funkcija
+        testrooms.add(testroom1);
+        testrooms.add(testroom2);
+        testrooms.add(testroom3);
+        testrooms.add(testroom4);
+        testrooms.add(testroom5);
+        System.out.println(testrooms.get(0).isRoomBooked);
+        System.out.println(testrooms.get(1).isRoomBooked);
+        System.out.println(testrooms.get(2).isRoomBooked);
+        System.out.println(testrooms.get(3).isRoomBooked);
+        System.out.println(testrooms.get(4).isRoomBooked);
+
+
+        //works
+//        try ( FileOutputStream fs = new FileOutputStream("Guests.bin")) {
+//            ObjectOutputStream os = new ObjectOutputStream(fs);
+//            os.writeObject(testingGuest);
+//            os.writeObject(testrooms);
+//            os.close();
+//        } catch (FileNotFoundException e) {
+//            //throw new RuntimeException(e);
+//            e.printStackTrace();
+//        } catch (IOException e){
+//            //comment
+//            e.printStackTrace();
+//        }
+
+
+
+
+        testrooms.get(0).setRoomBooked(true);
+        System.out.println(testrooms.get(0).isRoomBooked);
+        System.out.println(testrooms.get(1).isRoomBooked);
+        System.out.println(testrooms.get(2).isRoomBooked);
+        System.out.println(testrooms.get(3).isRoomBooked);
+        System.out.println(testrooms.get(4).isRoomBooked);
+        //READing
+
+        try(FileInputStream fi = new FileInputStream("Guests.bin")){
+
+            ObjectInputStream os = new ObjectInputStream(fi);
+
+            Guest readGuest1 = (Guest)os.readObject();
+            LinkedList<Room> readRooms1 = (LinkedList<Room>) os.readObject();
+            os.close();
+
+            System.out.println("READ OBJECTS");
+            System.out.println(readGuest1);
+            System.out.println(readRooms1);
+            testrooms = readRooms1;
+            System.out.println(testrooms.get(0).isRoomBooked);
+            System.out.println(testrooms.get(1).isRoomBooked);
+            System.out.println(testrooms.get(2).isRoomBooked);
+            System.out.println(testrooms.get(3).isRoomBooked);
+            System.out.println(testrooms.get(4).isRoomBooked);
+            System.out.println("READ OBJECTS ENDS");
+
+
+        } catch (FileNotFoundException e) {
+            //throw new RuntimeException(e);
+            e.printStackTrace();
+        } catch (IOException e) {
+            //throw new RuntimeException(e);
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            //throw new RuntimeException(e);
+            e.printStackTrace();
+        }
+
+
 //
 //        LinkedList<Room>loadedRooms = SaveManager.loadRooms(filename);
 //
@@ -30,7 +108,7 @@ public class Main {
 //            System.out.println(room);
 //        }
 //
-//        System.out.println("LOADING ENDS");
+       System.out.println("TESTING ENDS############################");
 
         //#################################################################################
 
