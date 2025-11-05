@@ -7,7 +7,6 @@ public class Main {
     public static void main(String[] args) {
 
         final String filename = "HotelRoomsSave.bin";
-        //System.out.println("Working Directory: " + System.getProperty("user.dir"));
 
         Scanner scanner = new Scanner(System.in);
 
