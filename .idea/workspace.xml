@@ -9,18 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d715a7e5-028a-4d51-9aa5-11214a813a85" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HotelRoomsSave.bin" beforeDir="false" afterPath="$PROJECT_DIR$/HotelRoomsSave.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Briko_Hotel_jar3/Briko_Hotel.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Briko_Hotel_jar3/Briko_Hotel.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JuliusBrikasHotel_jar/Briko_Hotel_jar.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JuliusBrikasHotel_jar/Briko_Hotel_jar.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Brikas/Hotel/GuestManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Brikas/Hotel/GuestManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Brikas/Hotel/GuestManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Brikas/Hotel/GuestManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Brikas/Hotel/RegistrationHistoryManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Brikas/Hotel/RegistrationHistoryManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Brikas/Hotel/RegistrationHistoryManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Brikas/Hotel/RegistrationHistoryManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/Brikas/Hotel/GuestManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Brikas/Hotel/GuestManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/Brikas/Hotel/RegistrationHistoryManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Brikas/Hotel/RegistrationHistoryManager.class" afterDir="false" />
-    </list>
+    <list default="true" id="d715a7e5-028a-4d51-9aa5-11214a813a85" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,6 +42,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/jb196/OneDrive/Desktop/Java projects/Briko_Hotel/out/artifacts/Briko_Hotel_jar3/Briko_Hotel.jar",
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
@@ -113,6 +103,15 @@
       <option name="presentableId" value="Default" />
       <updated>1692249444100</updated>
     </task>
+    <task id="LOCAL-00001" summary="project cleanup">
+      <option name="closed" value="true" />
+      <created>1762357209043</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1762357209043</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -136,6 +135,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="project cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="project cleanup" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
