@@ -62,10 +62,10 @@
       <recent name="org.Brikas.Hotel" />
     </key>
   </component>
-  <component name="RunManager" selected="JAR Application.juliusbrikashotel">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.Brikas.Hotel.Main" />
-      <module name="Briko_Hotel" />
+      <module name="Hotel_Registration" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.Brikas.Hotel.*" />
@@ -88,6 +88,17 @@
           <artifact name="Briko_Hotel:jar" />
         </option>
       </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Hotel_Registration" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Hotel_Registration" />
+      <option name="filePath" />
+      <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
