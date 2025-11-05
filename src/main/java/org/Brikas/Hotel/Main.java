@@ -10,7 +10,7 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        LinkedList<Room> testrooms = SavingManager.readObjectsFromFile(filename);// TESTING
+        LinkedList<Room> testrooms = SavingManager.readObjectsFromFile(filename);
         GuestManager guestManager = new GuestManager(scanner);
 
         MenuManager.runMenu(filename,testrooms);
